@@ -1,0 +1,19 @@
+{
+    "Number of Buses": 57,
+    "Learning Rate": 5e-05,
+    "L2 Regularization (Lambda)": 1e-06,
+    "Dropout Rate": 0.1,
+    "Use Batch Norm": true,
+    "Input Features": 7,
+    "GNN Layer 1 Size": 12,
+    "GNN Layer 2 Size": 12,
+    "Hidden Layer Size (FC)": 128,
+    "Output Size": 114,
+    "GNN Type": "GCN",
+    "Number of GNN Layers": 2,
+    "Number of Fully Connected Layers": 2,
+    "Total Trainable Parameters": 102686
+}
+
+Last epoch: 212, Train loss: 0.1792264, Val loss: 0.0913167
+Best epoch: 121, Best Train loss: 0.2073619, Best Val loss: 0.0883733
