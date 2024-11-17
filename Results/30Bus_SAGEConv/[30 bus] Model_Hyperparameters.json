@@ -1,0 +1,16 @@
+{
+    "Number of Buses": 30,
+    "Learning Rate": 5e-05,
+    "L2 Regularization (Lambda)": 1e-06,
+    "Dropout Rate": 0,
+    "Use Batch Norm": true,
+    "Input Features": 7,
+    "GNN Layer 1 Size": 12,
+    "GNN Layer 2 Size": 12,
+    "Hidden Layer Size (FC)": 128,
+    "Output Size": 60,
+    "GNN Type": "SAGEConv",
+    "Number of GNN Layers": 2,
+    "Number of Fully Connected Layers": 2,
+    "Total Trainable Parameters": 54476
+}
