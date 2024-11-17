@@ -85,7 +85,7 @@ The following figures show the training and validation loss curves for the GAT m
 
 - **Training and Validation Loss (57-Bus GAT Model)**
 
-  ![Train and Validation Loss - 57-Bus SAGE](document/57Bus_GAT.png)
+  ![Train and Validation Loss - 57-Bus SAGE](document/57_sage.png)
 
 *The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss, indicating good generalization and minimal overfitting.*
 
