@@ -79,7 +79,7 @@ The performance of each GNN architecture was evaluated using the following metri
 
 1. **Validation NRMSE for Different GNN Architectures**:
    - GCN exhibited the highest NRMSE, particularly for larger systems (e.g., IEEE 57-bus), while SAGEConv consistently achieved the lowest NRMSE values across all configurations.
-   - ![NRMSE Comparison](document/nrmsPY.png)
+   - ![NRMSE Comparison](document/nrmsePY.png)
 
 2. **Comparison of \( R^2 \) Scores**:
    - GAT and SAGEConv models demonstrated strong predictive performance, as reflected by higher \( R^2 \) scores, indicating a better fit to the true voltage values.
