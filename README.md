@@ -10,7 +10,7 @@ The main goal of this project is to leverage GNNs to predict AC power flow varia
 
 - **Comprehensive GNN Models**: Includes implementations of GCN, GAT, and SAGEConv architectures using PyTorch Geometric.
 - **Standard IEEE Test Systems**: Supports datasets for IEEE 14-bus, 30-bus, 57-bus, and 118-bus configurations with realistic load variations.
-- **Pandapower Integration**: Utilizes Pandapower for dataset generation and AC power flow simulations, allowing accurate ground truth data for training and evaluation.
+- **Pandapower Integration**: Utilizes Pandapower for dataset generation and AC power flow simulations, allowing accurate ground truth data with the Newton-Raphson method for training and evaluation.
 - **Scalable and Efficient**: Demonstrates improved scalability and efficiency for large power systems using graph-based learning methods.
 
 ## Datasets
@@ -49,43 +49,19 @@ The data is saved in Excel format (`.xlsx`), with separate files for each datase
 - Matplotlib
 - Pandas
 
-### Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Amirtalebi83/GNN-OptimalPowerFlow.git
-   cd GNN-OptimalPowerFlow
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+    Simply follow the steps provided in the GNNPowerFlow.ipynb :)
 
 ## Usage
 
 ### Dataset Generation
 
-Run the dataset generation script for the IEEE 30-bus system:
-```bash
-python generate_datasets.py
-```
+Run the dataset generation script for the IEEE 14-bus, 30-bus or 57-bus system from the Dataset generation code.
 
 This will generate 10 Excel files containing load flow data for training and testing.
-
-### Training the GNN Model
-
-To train the GNN model on the 30-bus dataset using the GAT architecture:
-```bash
-python train_model.py --dataset "datasets_30Bus" --model "GAT"
-```
 
 ### Evaluation
 
 Evaluate the trained model and visualize the results:
-```bash
-python evaluate_model.py --model_path "saved_models/gat_30bus.pth"
-```
 
 ## Results
 
@@ -111,4 +87,4 @@ Feel free to submit issues or pull requests if you have suggestions or improveme
 
 ## Acknowledgments
 
-Special thanks to the PyTorch Geometric and Pandapower communities for providing excellent tools for graph-based machine learning and power flow analysis.
+Special thanks to Dr. Kaixiong Zhou as this was a project of ECE592: Advanced Topic in Deep Learning at NCSU under his supervision.
