@@ -105,9 +105,9 @@ The following figures show the training and validation loss curves for the GAT m
 
 | Model     | NRMSE (30-bus) | \( R^2 \) Score (30-bus) | Average Test Loss |
 |-----------|----------------|--------------------------|-------------------|
-| GCN       | 0.042          | 0.92                     | 0.015             |
-| GAT       | 0.025          | 0.97                     | 0.008             |
-| SAGEConv  | 0.018          | 0.98                     | 0.005             |
+| GCN       | 0.04273        | 0.983492                 | 0.21999           |
+| GAT       | 0.013373       | 0.981958                 | 0.18725           |
+| SAGEConv  | 0.005999       | 0.981989                 | 0.224785          |
 
 
 Training and evaluation results, including loss curves and performance metrics, are available in the `results/` folder.
