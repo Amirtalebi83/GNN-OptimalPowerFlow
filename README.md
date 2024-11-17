@@ -75,6 +75,20 @@ The performance of each GNN architecture was evaluated using the following metri
 - **\( R^2 \) Score**: High \( R^2 \) scores indicate strong predictive performance, especially for the GAT and SAGEConv models.
 - **Average Test Loss**: Lower average test loss for SAGEConv, indicating strong generalization and scalability.
 
+### Training and Validation Loss Curves
+
+The following figures show the training and validation loss curves for the GAT model on IEEE 14-bus, 30-bus and 57-bus systems:
+
+- **Training and Validation Loss (30-Bus GAT Model)**
+
+  ![Train and Validation Loss - 30-Bus GAT](document/30_GAT.png)
+
+- **Training and Validation Loss (57-Bus GAT Model)**
+
+  ![Train and Validation Loss - 57-Bus GAT](document/57Bus_GAT.png)
+
+*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss, indicating good generalization and minimal overfitting.*
+
 ### Comparison of GNN Architectures:
 
 1. **Validation NRMSE for Different GNN Architectures**:
