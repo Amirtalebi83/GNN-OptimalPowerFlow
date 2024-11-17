@@ -15,5 +15,5 @@
     "Total Trainable Parameters": 54248
 }
 
-Last epoch: 168, Train loss: 0.0151288, Val loss: 0.0068892
-Best epoch: 87, Best Train loss: 0.0175527, Best Val loss: 0.0065944
+Last epoch: 800, Train loss: 0.0002691, Val loss: 0.0005632
+Best epoch: 798, Best Train loss: 0.0002702, Best Val loss: 0.0005480
