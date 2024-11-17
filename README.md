@@ -79,6 +79,21 @@ The performance of each GNN architecture was evaluated using the following metri
 
 Training and evaluation results, including loss curves and performance metrics, are available in the `results/` folder.
 
+## Results
+
+1. **Validation NRMSE for Different GNN Architectures**
+
+   ![NRMSE Comparison](document/nrmsPY.png)
+
+2. **Comparison of \( R^2 \) Scores**
+
+   ![R2 Score Comparison](document/r2scorePY.png)
+
+3. **Average Test Loss Across GNN Models**
+
+   ![Average Test Loss](document/testlossPY.png)
+
+
 ## Contributing
 
 Feel free to submit issues or pull requests if you have suggestions or improvements.
