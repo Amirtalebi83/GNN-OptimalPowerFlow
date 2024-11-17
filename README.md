@@ -21,6 +21,7 @@ The datasets were generated using Pandapower with realistic load variations to s
 
 The data is saved in Excel format (`.xlsx`), with separate files for each dataset and bus configuration.
 
+
 ## Methodology
 
 1. **Dataset Generation**:
@@ -63,12 +64,44 @@ This will generate 10 Excel files containing load flow data for training and tes
 
 Evaluate the trained model and visualize the results:
 
+
+
 ## Results
+
+The performance of the GNN architectures (GCN, GAT, and SAGEConv) was evaluated on the IEEE 14-bus, 30-bus, and 57-bus test systems. The metrics used for evaluation include:
 
 The performance of each GNN architecture was evaluated using the following metrics:
 - **Normalized Root Mean Squared Error (NRMSE)**: Consistently below 0.05 for all models across different bus systems.
 - **\( R^2 \) Score**: High \( R^2 \) scores indicate strong predictive performance, especially for the GAT and SAGEConv models.
 - **Average Test Loss**: Lower average test loss for SAGEConv, indicating strong generalization and scalability.
+
+### Training and Validation Loss Curves
+
+The following figures show the training and validation loss curves for the GAT model on IEEE 14-bus, 30-bus and 57-bus systems:
+
+- **Training and Validation Loss (30-Bus GAT Model)**
+
+  ![Train and Validation Loss - 30-Bus GAT](document/30_GAT.png)
+
+- **Training and Validation Loss (57-Bus GAT Model)**
+
+  ![Train and Validation Loss - 57-Bus SAGE](document/57Bus_GAT.png)
+
+*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss, indicating good generalization and minimal overfitting.*
+
+### Comparison of GNN Architectures:
+
+1. **Validation NRMSE for Different GNN Architectures**:
+   - GCN exhibited the highest NRMSE, particularly for larger systems (e.g., IEEE 57-bus), while SAGEConv consistently achieved the lowest NRMSE values across all configurations.
+   - ![NRMSE Comparison](document/nrmsePY.png)
+
+2. **Comparison of \( R^2 \) Scores**:
+   - GAT and SAGEConv models demonstrated strong predictive performance, as reflected by higher \( R^2 \) scores, indicating a better fit to the true voltage values.
+   - ![R2 Score Comparison](document/r2scorePY.png)
+
+3. **Average Test Loss Across GNN Models**:
+   - The average test loss was lowest for SAGEConv, showing its superior generalization ability compared to GCN and GAT, especially on larger bus systems.
+   - ![Average Test Loss](document/testlossPY.png)
 
 | Model     | NRMSE (30-bus) | \( R^2 \) Score (30-bus) | Average Test Loss |
 |-----------|----------------|--------------------------|-------------------|
@@ -76,9 +109,19 @@ The performance of each GNN architecture was evaluated using the following metri
 | GAT       | 0.025          | 0.97                     | 0.008             |
 | SAGEConv  | 0.018          | 0.98                     | 0.005             |
 
-## Visualization
 
 Training and evaluation results, including loss curves and performance metrics, are available in the `results/` folder.
+
+
+
+
+### Summary:
+
+The results demonstrate the strengths of different GNN architectures:
+- **GCN**: Performs adequately on smaller systems but struggles with larger configurations due to limited feature propagation capability.
+- **GAT**: Shows improved performance with its attention mechanism, prioritizing influential nodes (e.g., generator buses).
+- **SAGEConv**: Exhibits the best overall performance, with lower NRMSE, higher \( R^2 \) scores, and reduced test loss, making it suitable for both small and large power grid configurations.
+
 
 ## Contributing
 
