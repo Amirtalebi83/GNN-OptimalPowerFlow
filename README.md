@@ -27,7 +27,7 @@ The data is saved in Excel format (`.xlsx`), with separate files for each datase
 1. **Dataset Generation**:
    - Uses Pandapower to generate load flow datasets with random variations in load demands.
    - Solves AC power flow equations using the Newton-Raphson method for ground truth data.
-   - Each dataset contains 2000 samples with realistic load variations for training, validation, and testing.
+   - Each dataset contains 10,000 samples with realistic load variations for training, validation, and testing.
 
 2. **GNN Architectures**:
    - **GCN**: A simple graph convolutional network for baseline performance.
