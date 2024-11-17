@@ -10,7 +10,7 @@ The main goal of this project is to leverage GNNs to predict AC power flow varia
 
 - **Comprehensive GNN Models**: Includes implementations of GCN, GAT, and SAGEConv architectures using PyTorch Geometric.
 - **Standard IEEE Test Systems**: Supports datasets for IEEE 14-bus, 30-bus, 57-bus, and 118-bus configurations with realistic load variations.
-- **Pandapower Integration**: Utilizes Pandapower for dataset generation and AC power flow simulations, allowing accurate ground truth data for training and evaluation.
+- **Pandapower Integration**: Utilizes Pandapower for dataset generation and AC power flow simulations, allowing accurate ground truth data with the Newton-Raphson method for training and evaluation.
 - **Scalable and Efficient**: Demonstrates improved scalability and efficiency for large power systems using graph-based learning methods.
 
 ## Datasets
