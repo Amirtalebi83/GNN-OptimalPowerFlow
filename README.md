@@ -87,7 +87,7 @@ The following figures show the training and validation loss curves for the GAT m
 
   ![Train and Validation Loss - 57-Bus SAGE](document/57_sage.png)
 
-*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss, indicating good generalization and minimal overfitting.*
+*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss which indicates good generalization and minimal overfitting.*
 
 ### Comparison of GNN Architectures:
 
