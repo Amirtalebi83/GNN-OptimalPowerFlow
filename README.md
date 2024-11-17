@@ -83,7 +83,7 @@ Training and evaluation results, including loss curves and performance metrics, 
 
 1. **Validation NRMSE for Different GNN Architectures**
 
-   ![NRMSE Comparison](document/nrmsPY.png)
+   ![NRMSE Comparison](document/nrmsePY.png) 
 
 2. **Comparison of \( R^2 \) Scores**
 
