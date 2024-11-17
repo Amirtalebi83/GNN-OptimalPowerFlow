@@ -27,7 +27,7 @@ The data is saved in Excel format (`.xlsx`), with separate files for each datase
 1. **Dataset Generation**:
    - Uses Pandapower to generate load flow datasets with random variations in load demands.
    - Solves AC power flow equations using the Newton-Raphson method for ground truth data.
-   - Each dataset contains 2000 samples with realistic load variations for training, validation, and testing.
+   - Each dataset contains 10,000 samples with realistic load variations for training, validation, and testing.
 
 2. **GNN Architectures**:
    - **GCN**: A simple graph convolutional network for baseline performance.
@@ -87,7 +87,7 @@ The following figures show the training and validation loss curves for the GAT m
 
   ![Train and Validation Loss - 57-Bus SAGE](document/57_sage.png)
 
-*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss, indicating good generalization and minimal overfitting.*
+*The loss curves demonstrate effective convergence for all the cases. The validation loss closely follows the training loss which indicates good generalization and minimal overfitting.*
 
 ### Comparison of GNN Architectures:
 
@@ -105,9 +105,9 @@ The following figures show the training and validation loss curves for the GAT m
 
 | Model     | NRMSE (30-bus) | \( R^2 \) Score (30-bus) | Average Test Loss |
 |-----------|----------------|--------------------------|-------------------|
-| GCN       | 0.042          | 0.92                     | 0.015             |
-| GAT       | 0.025          | 0.97                     | 0.008             |
-| SAGEConv  | 0.018          | 0.98                     | 0.005             |
+| GCN       | 0.04273        | 0.983492                 | 0.21999           |
+| GAT       | 0.013373       | 0.981958                 | 0.18725           |
+| SAGEConv  | 0.005999       | 0.981989                 | 0.224785          |
 
 
 Training and evaluation results, including loss curves and performance metrics, are available in the `results/` folder.
