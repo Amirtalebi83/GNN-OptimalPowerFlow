@@ -76,7 +76,6 @@ The performance of each GNN architecture was evaluated using the following metri
 | GAT       | 0.025          | 0.97                     | 0.008             |
 | SAGEConv  | 0.018          | 0.98                     | 0.005             |
 
-## Visualization
 
 Training and evaluation results, including loss curves and performance metrics, are available in the `results/` folder.
 
